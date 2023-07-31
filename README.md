@@ -22,4 +22,8 @@ https://learn.microsoft.com/en-us/powershell/scripting/install/install-ubuntu?vi
 ```
 
 ## GenerateCredentials SMTP
-Hemos creado un script para generar las credenciales y guardarla en el path destino que creas conveniente.
+Hemos creado un script para generar las credenciales y guardarla en el path destino que creas conveniente te recomiendo te bajes el archivo y lo pruebes dentro de tu ambiente de momento este script funciona en linux y windows.
+
+- [Generar credenciales para SMTP](
+    https://raw.githubusercontent.com/carlossiguam/prj-linuxpowershell/main/generateCredentialsSMTP.ps1
+)
