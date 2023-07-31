@@ -27,3 +27,10 @@ Hemos creado un script para generar las credenciales y guardarla en el path dest
 - [Generar credenciales para SMTP](
     https://raw.githubusercontent.com/carlossiguam/prj-linuxpowershell/main/generateCredentialsSMTP.ps1
 )
+
+## SendMail using Send-MailMessage
+He creado un script que envia una notificaciond de prueba usando la herramienta Send-MailMessage que aunque el warning me recomienda que no lo use porque esta descontinuado ha sido el que pues ha funcionado desde linux usando powershell.
+
+- [Enviar correo usando Send-MailMessage](
+    https://raw.githubusercontent.com/carlossiguam/prj-linuxpowershell/main/init.ps1
+)
