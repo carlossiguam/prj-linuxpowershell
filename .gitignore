@@ -1,3 +1,6 @@
+# files unnecesary
+credenciales.xml
+evaluate.ps1
 # Compiled class file
 *.class
 
