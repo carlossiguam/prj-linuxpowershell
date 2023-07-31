@@ -45,7 +45,12 @@ Write-Host $matchingFiles
 
 function sendMailO {
     # $senderCredential=Get-Credential
-    Send-MailMessage -To 'carlos.sigua@gmail.com' -From csigua@emov.gob.ec -Subject 'Infrastructure message' -Body 'Esto es un mensaje de prueba' -UseSsl -Credential $credentials -SmtpServer 'mail.emov.gob.ec' -Port 587
+    Send-MailMessage -To 'carlos.sigua@gmail.com' `
+    -From csigua@emov.gob.ec `
+    -Subject 'Infrastructure message' `
+    -Body 'Esto es un mensaje de prueba' `
+    -UseSsl -Credential $credentials `
+    -SmtpServer 'mail.emov.gob.ec' -Port 587
 }
 function main {
     sendMailO
