@@ -17,6 +17,17 @@ $matchingFiles = Get-ChildItem -Path $folderPath `
 
 Write-Host $matchingFiles
 
+# Configuración del correo
+$recipientEmail = 'csigua@emov.gob.ec'
+$senderEmail = 'carlos.sigua@gmail.com'
+$subject = 'INFRA NOTIF 1492'
+$body = 'Este es por ahora el mensaje del correo con los archivos adjuntos encontrados.  '+$matchingFiles
+
+# Configuracion server smtp
+$smtpServer = 'mail.emov.gob.ec'
+
+
+
 # # Contar el número de archivos encontrados
 # $foundFileCount = $matchingFiles.Count
 
@@ -45,12 +56,12 @@ Write-Host $matchingFiles
 
 function sendMailO {
     # $senderCredential=Get-Credential
-    Send-MailMessage -To 'carlos.sigua@gmail.com' `
-    -From csigua@emov.gob.ec `
-    -Subject 'Infrastructure message' `
-    -Body 'Esto es un mensaje de prueba' `
+    Send-MailMessage -To $senderEmail `
+    -From $recipientEmail `
+    -Subject $subject `
+    -Body $body `
     -UseSsl -Credential $credentials `
-    -SmtpServer 'mail.emov.gob.ec' -Port 587
+    -SmtpServer $smtpServer -Port 587
 }
 function main {
     sendMailO

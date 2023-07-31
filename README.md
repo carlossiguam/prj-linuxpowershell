@@ -4,30 +4,22 @@ USING POWERSHELL ON LINUX
 This repo talks about my  experience with powershell on linux.
 
 ## KNOWNING THE TOOL
+Bueno para el caso de fedora tan solo hemos seguido lo que nos indica la misma documentacion de microsoft
+- [Installing powershell on linux](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-linux?view=powershell-7.3)
+
 
 ### INSTALL ON FEDORA
-Since three years ago, i'll be using fedora as my linux distro favorite for work and live.
 
-To install Powershell core follow the steps:
-1 - Install prerequisites packages
-```sudo dnf update && sudo dnf upgrade ```<|im_sep|>
-2 - Download PowerShell package from Microsoft repository (Powershell is now part of Fedora Linux repositories).
-2 - Enable Microsoft repository (optional but recommended):
-```rpm --import https://packages.microsoft.com/keys/microsoft.asc``` <|
+```shell
+https://learn.microsoft.com/en-us/powershell/scripting/install/install-rhel?view=powershell-7.3#installation-via-package-repository
 
+```
 
+### INSTALL ON UBUNTU
 
+```shell
+https://learn.microsoft.com/en-us/powershell/scripting/install/install-ubuntu?view=powershell-7.3#installation-via-package-repository
+```
 
-
-
-
-- [Bashly framework](https://bashly.dannyb.co/)
-
-Para visitar lo que estoy construyendo tienes el siguiente link
-- [bashly directory](https://github.com/carlossiguam/prj-bash/tree/main/bashly.d)
-
-## SCRIPTS DIRECTORY
-On this directory we have scripts low complexity, only build with bash or sh enviroment, obviously we will improve it over time.
-
-For visit that i building you have next link
-- [Script directory](https://github.com/carlossiguam/prj-bash/tree/main/scripts.d)
+## GenerateCredentials SMTP
+Hemos creado un script para generar las credenciales y guardarla en el path destino que creas conveniente.
